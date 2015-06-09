@@ -11,23 +11,23 @@ $lightgray: #a1a1a1;
 $verylightgray: #b2c6cd;
 $landlubber: #28948c;
 $overboard: #009dcd;
- 
+
 $padding: 10px;
 $margin: 10px;
 $main-width: 1000px;
- 
+
 $font-size: 16px;
 $font-family: 'Lato', sans-serif;
 $line-height: 1.4;
- 
+
 $break-four: 1050px;
 $break-three: 760px;
 $break-two: 520px;
 $break-one: 360px;
- 
+
 @import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import url('normalize.css');
- 
+
 //clearfix - see http://nicolasgallagher.com/micro-clearfix-hack/
 .group:after {
   content: "";
@@ -42,11 +42,11 @@ $break-one: 360px;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
- 
+
 html, body, .wrap {
     min-height: 100%;
 }
- 
+
 body {
     color: $theblackflag;
     font-size: $font-size;
@@ -121,7 +121,7 @@ body {
             
         }
         
-        &.twitter {
+        &.poopy {
             background-position: -25px 0px;
             
             &:hover {
@@ -137,7 +137,7 @@ body {
             }
         }
         
-        &.googleplus {
+        &.github {
             background-position: -75px 0px;
             
             &:hover {
@@ -332,33 +332,33 @@ ul {
             }
 
         }
-    // inside content styles at end
-    .portfolio-image {
-        padding: $padding*2;
-        background: $white;
-        border-left: 1px solid darken($gray, 10%);
-        text-align: center;
+        // inside content styles at end
+        .portfolio-image {
+            padding: $padding*2;
+            background: $white;
+            border-left: 1px solid darken($gray, 10%);
+            text-align: center;
 
-        @media screen and (min-width: $break-three) {
-            float: left;
-            width: 70%;
-        }
+            @media screen and (min-width: $break-three) {
+                float: left;
+                width: 70%;
+            }
 
-        img {
-            width: 100%;
-            max-width: 610px;
-            height: auto;
-        }
-
-        div.loading {
             img {
-                width: auto;
+                width: 100%;
+                max-width: 610px;
                 height: auto;
+            }
+
+            div.loading {
+                img {
+                    width: auto;
+                    height: auto;
+                }
             }
         }
     }
 }
-    }
 
 
 // ampersand http://www.joeloliveira.com/2011/06/28/the-ampersand-a-killer-sass-feature/
@@ -398,7 +398,7 @@ div.loading {
         transform-origin: center center;
     }
 }
- 
+
 @keyframes rotate {
     100% {
         -webkit-transform: rotate(360deg);
